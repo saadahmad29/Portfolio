@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #4a90e2, #77aaff); /* Blue to Light Blue */
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  background: #003366; /* Dark Blue */
+  color: #fff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #77aaff 3px solid;
+  text-align: center;
+}
+
+header h1 {
+  margin: 10px 0;
+  font-size: 36px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+/* Profile Photo */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff;
+  animation: float 3s ease-in-out infinite;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+/* Sections */
+section {
+  padding: 20px 0;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+  color: #fff; /* White Text */
+}
+
+section p, section ul {
+  font-size: 18px;
+  color: #fff; /* White Text */
+}
+
+section ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* Projects */
+.project {
+  background: #003366; /* Dark Blue */
+  background: rgb; /* Semi-transparent White */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project a {
+  color: #003366;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
